@@ -1,0 +1,26 @@
+{
+  "name": "countdown",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/vsgoulart/countdown",
+  "author": "Vinícius Goulart <vinicius@vsgoulart.com>",
+  "license": "MIT",
+  "private": false,
+  "scripts": {
+    "clean": "rimraf dist",
+    "build": "yarn run clean & webpack -p",
+    "start": "yarn build & node ./dist/index.js",
+    "test": "jest",
+    "test:watch": "yarn test --watch"
+  },
+  "devDependencies": {
+    "babel-core": "^6.26.0",
+    "babel-jest": "^21.2.0",
+    "babel-loader": "^7.1.2",
+    "babel-plugin-transform-object-rest-spread": "^6.26.0",
+    "babel-preset-env": "^1.6.0",
+    "jest": "^21.2.1",
+    "rimraf": "^2.6.2",
+    "webpack": "^3.6.0"
+  }
+}
