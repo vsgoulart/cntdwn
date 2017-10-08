@@ -4,8 +4,22 @@ Cntdwn is a library that calculates the difference of time between an arbitrary 
 
 ## Installation
 
-Download the project and run ```npm install``` or ```yarn install```
-
-After that you can import the file ```/dist/index.js``` and use the library.
+Just run ```npm install cntdwn``` or ```yarn add cntdwn```
 
 ## Example
+
+```javascript
+  const Cntdwn = require("cntdwn");
+
+  const countdown = new Cntdwn(
+    new Date(2019, 1, 1),
+    (days, hours, minutes, seconds) => {
+      console.log(days, hours, minutes, seconds);
+
+      if(days < 10) {
+        countdown.stop();
+      }
+  });
+
+  countdown.start();
+```
