@@ -1,6 +1,6 @@
 "use strict";
 
-class Countdown {
+class Cntdwn {
   constructor(date, renderCallback = () => {}) {
     if (!isInstanceOfDate(date)) {
       throw new TypeError("The argument `date` is not an instace of Date.");
@@ -63,4 +63,4 @@ const isInstanceOfDate = date => date instanceof Date;
 
 const isFunction = functionToCheck => typeof functionToCheck == "function";
 
-module.exports = Countdown;
+module.exports = Cntdwn;

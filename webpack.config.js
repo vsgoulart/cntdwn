@@ -10,7 +10,7 @@ module.exports = (env = {}) => ({
   output: {
     path: path.resolve(__dirname, "dist"),
     filename: "[name].js",
-    library: "Countdown",
+    library: "Cntdwn",
     libraryTarget: "umd2"
   },
   module: {

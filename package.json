@@ -1,8 +1,8 @@
 {
-  "name": "countdown",
+  "name": "cntdwn",
   "version": "1.0.0",
-  "main": "index.js",
-  "repository": "https://github.com/vsgoulart/countdown",
+  "main": "dist/index.js",
+  "repository": "https://github.com/vsgoulart/cntdwn",
   "author": "Vinícius Goulart <vinicius@vsgoulart.com>",
   "license": "MIT",
   "private": false,

@@ -1,21 +1,21 @@
 "use strict";
 
-import Countdown from "./index";
+import Cntdwn from "./index";
 
 jest.useFakeTimers();
 
 describe("Countdown", () => {
   it("should throw an error when the first argument isn't an instance of Date", () => {
-    expect(() => new Countdown("foo", () => {})).toThrow();
+    expect(() => new Cntdwn("foo", () => {})).toThrow();
   });
 
   it("should throw an error when the second argument isn't a function", () => {
-    expect(() => new Countdown(new Date(), "foo")).toThrow();
+    expect(() => new Cntdwn(new Date(), "foo")).toThrow();
   });
 
   it("should execute the callback function after the method start() is called", () => {
     const callback = jest.fn();
-    const countdown = new Countdown(new Date(2014, 1, 1), callback);
+    const countdown = new Cntdwn(new Date(2014, 1, 1), callback);
 
     countdown.start();
 
@@ -28,7 +28,7 @@ describe("Countdown", () => {
 
   it("should call the callback once and pass (0, 0, 0, 0) as arguments when the date has already occurred", () => {
     const callback = jest.fn();
-    const countdown = new Countdown(new Date(2014, 1, 1), callback);
+    const countdown = new Cntdwn(new Date(2014, 1, 1), callback);
 
     countdown.start();
 
