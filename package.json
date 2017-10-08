@@ -1,6 +1,6 @@
 {
   "name": "cntdwn",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "main": "dist/index.js",
   "repository": "https://github.com/vsgoulart/cntdwn",
   "author": "Vinícius Goulart <vinicius@vsgoulart.com>",
